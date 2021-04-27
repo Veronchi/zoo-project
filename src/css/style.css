@@ -496,13 +496,22 @@ body {
   color: #919191;
 }
 
+.slider__controls {
+  padding-bottom: 24px;
+}
+
 .slider__button {
   position: relative;
   width: 42px;
   height: 42px;
-  background-color: #FFFFFF;
+  background-color:transparent;
   border: none;
+  border-radius: 100px;
   cursor: pointer;
+}
+
+.slider__button:hover{
+  box-shadow: 0px 2px 50px rgb(13 68 77);
 }
 
 .slider__button + .slider__button {
@@ -512,8 +521,8 @@ body {
 .slider__button.top::after {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 17px;
+  top: 10px;
+  left: 15px;
   background-image: url('../img/slider__btn-top.svg');
   background-repeat: no-repeat;
   background-size: contain;
@@ -524,8 +533,8 @@ body {
 .slider__button.bottom::after {
   content: "";
   position: absolute;
-  top: 13px;
-  left: 17px;
+  top: 11px;
+  left: 13px;
   background-size: contain;
   background-image: url("../img/slider__btn-bottom.svg");
   background-repeat: no-repeat;
@@ -812,4 +821,110 @@ body {
   font-size: 16px;
   line-height: 19px;
   color: #000000;
+}
+
+.animals__wrapper {
+  display: flex;
+}
+
+.look-at-animals {
+  margin-bottom: 100px;
+}
+
+.look-at-animals__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+  margin-bottom: 50px;
+}
+
+.animals-list {
+  display: flex;
+  justify-content: start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-right: 50px;
+}
+
+.animals-list__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  width: 105px;
+  height: 130px;
+}
+
+.animals-list__item + .animals-list__item {
+  margin-left: 100px;
+}
+
+.animals-item__img {
+  margin-bottom: 8px;
+}
+
+.animals-item__text {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #2D2D2D;
+}
+
+.btn-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.animal-list__btn {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  background-color:transparent;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.animal-list__btn:hover{
+  box-shadow: 0px 2px 50px rgb(13 68 77);
+}
+
+.animal-list__btn.top::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  background-image: url('../img/slider__btn-top.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 21px;
+}
+
+.animal-list__btn.bottom::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: 13px;
+  background-size: contain;
+  background-image: url("../img/slider__btn-bottom.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 21px;
 }
