@@ -673,3 +673,143 @@ body {
   color: #C5E1E6;
 }
 
+.testimonials {
+  margin-bottom: 100px;
+} 
+
+.testimonials__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+}
+
+.testimonials__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.testimonials__link {
+  position: relative;
+  width: 255px;
+  height: 52px;
+  padding-left: 36px;
+  padding-top: 12px;
+  text-align: center;
+  border: 1.5px solid #19707D;
+  border-radius: 100px;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #19707D;
+}
+
+.testimonials__link:hover {
+  background-color: #C5E1E6;
+  border: 1.5px solid #FFFFFF;
+}
+
+.testimonials__link::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  background-image: url("../img/testimonial-link-icon.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.feedback__list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.feedback__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 480px;
+  height: 259px;
+}
+
+.feedback__item + .feedback__item {
+  margin-left: 20px;
+}
+
+.feedback__item-top {
+  position: relative;
+  height: 170px;
+  padding-left: 45px;
+  padding-top: 28px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.feedback__item-top::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 75px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 17.5px 0 17.5px;
+  border-color: #FFFFFF transparent transparent transparent;
+}
+
+.feedback__date {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B3B3B3;
+}
+
+.feedback__text {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2D2D2D;
+  padding: 0;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.feedback__item-bottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.feedback__img {
+  margin-right: 15px;
+}
+
+.feedback__user-info {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+}
