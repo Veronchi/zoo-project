@@ -67,6 +67,7 @@ body {
   text-transform: uppercase;
   color: #C5E1E6;
   cursor: pointer;
+  border-bottom: 2px solid transparent;
 }
 
 .navigation__item.active {
