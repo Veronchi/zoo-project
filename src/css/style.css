@@ -17,11 +17,13 @@ a {
 body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .container {
-  width: 1480px;
+  max-width: 1480px;
   margin: 0 auto;
+  padding: 0 5px;
 }
 
 .header {
@@ -130,7 +132,7 @@ body {
   height: 790px;
   background-image: url("../img/hero-background.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
 
 } 
 
@@ -262,42 +264,47 @@ body {
 .scene {
   position: relative;
   display: block;
+  margin-bottom: 70px;
+}
+
+.scene__inner {
+  position: relative;
+  display: block;
   width: 100%;
   height: 490px;
-  margin-bottom: 70px;
 }
 
 .scene .vector-top {
   position: absolute;
   top: 0;
   background-image: url("../img/scene/Vector-top.svg");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 490px;
+  height: 100%;
 }
 
 .scene .vector-midle {
   position: absolute;
   top: 23px;
   background-image: url("../img/scene/Vector-midle.svg");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 490px;
+  height: 100%;
 }
 
 .scene .vector-bottom {
   position: absolute;
   top: 60px;
   background-image: url("../img/scene/Vector-bottom.svg");
-  background-size: contain;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   width: 100%;
-  height: 490px;
+  height: 100%;
 }
 
-.scene .bamboo {
+.scene__inner .bamboo {
   position: absolute;
   top: 60px;
   left: 1%;
@@ -307,12 +314,12 @@ body {
   height: 220px;
 }
 
-.scene .bamboo.second {
-  top: 90px;
+.scene__inner .bamboo.second {
+  top: 28%;
   left: 55%;
 }
 
-.scene .tree {
+.scene__inner .tree {
   position: absolute;
   top: 46px;
   left: 12%;
@@ -323,7 +330,7 @@ body {
   height: 230px;
 }
 
-.scene .tree.second {
+.scene__inner .tree.second {
   position: absolute;
   top: 106px;
   left: 42%;
@@ -331,15 +338,15 @@ body {
   height: 158px;
 }
 
-.scene .tree.third {
+.scene__inner .tree.third {
   position: absolute;
-  top: 163px;
+  top: 30%;
   left: 85%;
 }
 
-.scene .panda {
+.scene__inner .panda {
   position: absolute;
-  top: 150px;
+  top: 40%;
   left: 50%;
   background-image: url("../img/scene/Panda.svg");
   background-size: cover;
@@ -548,27 +555,31 @@ body {
   height: 570px;
   background-image: url("../img/Pay-and-feed.svg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100% 100%;
   padding-top: 102px;
   margin-bottom: 100px;
 }
 
-.pay-and-feed::before {
+.pay-and-feed .container {
+  position: relative;
+}
+
+.pay-and-feed .container::before {
   content: "";
   position: absolute;
-  left: 16px;
-  top: 125px;
+  left: -200px;
+  top: 20px;
   height: 230px;
   width: 130px;
   background-image: url("../img/scene/tree1.svg");
   background-repeat: no-repeat;
 }
 
-.pay-and-feed::after {
+.pay-and-feed .container::after {
   content: "";
   position: absolute;
-  top: 205px;
-  right: 30px;
+  top: 115px;
+  right: -200px;
   width: 116px;
   height: 221px;
   background-image: url("../img/scene/Bamboo.svg");
