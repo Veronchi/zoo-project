@@ -39,3 +39,91 @@
     margin-right: 1%;
   }
 }
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+    .container {
+        padding: 0 5px;
+    }
+
+    .presentation__photo {
+        width: 100%;
+    }
+
+    .hero-presentation__right .presentation__photo-link::after {
+        top: 40%;
+        right: 45%;
+    }
+
+    .scene {
+        margin-bottom: 100px;
+    }
+
+    .scene .vector-top {
+        background-size: auto;
+        background-position: center;
+    }
+
+    .scene .vector-midle {
+        background-size: auto;
+        background-position: center;
+    }
+
+    .scene .vector-bottom {
+        background-size: auto;
+        background-position: center;
+    }
+
+    .scene__inner .bamboo {
+        top: 5%;
+    }
+
+    .scene__inner .tree {
+        top: 20%;
+    }
+
+    .slider__list {
+        justify-content: space-around;
+    }
+
+    .slider__controls {
+        margin-right: 2%;
+    }
+
+    .pay-and-feed {
+        background-size: auto;
+        background-position: center;
+    }
+
+    .tree-container {
+        top: 25%;
+        left: 0%;
+    }
+
+    .bamboo-container {
+        top: 33%;
+        right: 0%;
+    }
+
+    .pay-and-feed__stages::before {
+        background-size: 80% 100%;
+        left: 25%;
+    }
+
+    .pay-and-feed__stages::after {
+        left: 59%;
+        background-size: 83% 100%;
+    }
+    
+
+    .animals__wrapper {
+        justify-content: space-around;
+    }
+
+    .animals-list {
+        margin-right: 25%;
+    }
+
+    .animals-list__item + .animals-list__item {
+        margin-left: 12%;
+    }
+}
