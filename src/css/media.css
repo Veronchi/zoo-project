@@ -1,57 +1,41 @@
 @media (min-width: 1440px) and (max-width: 1919px) {
-    /* .container {
-        width: 1440px;
-    } */
+  .container {
+    padding: 0 2%;
+  }
 
-    /* .pay-and-feed .container::after {
-        right: 1vw;
-    } */
-  /* .scene .tree.third {
+  .slider__list {
+    justify-content: space-around;
+  }
+
+  .pay-and-feed {
+    background-size: auto;
+    background-position: center;
+  }
+
+  .tree-container {
     top: 25%;
+    left: 0%;
+  }
+
+  .bamboo-container {
+    top: 35%;
+    right: 0%;
   }
 
   .pay-and-feed__top {
-    padding-left: 8%;
-    padding-right: 8%;
-  } */
+    margin-bottom: 5%;
+  }
+
+  .pay-and-feed__stages::before {
+    background-size: 85% 100%;
+  }
+
+  .pay-and-feed__stages::after {
+    left: 830px;
+    background-size: 85% 100%;
+  }
+
+  .animals-list {
+    margin-right: 1%;
+  }
 }
-
-/* @media (max-width: 1600px) {
-    .how-it-works__title {
-        top: -100px;
-        left: 60px;
-    }
-
-    .scene .tree.third {
-        top: 20%
-    }
-
-    .pay-and-feed {
-        padding-top: 75px;
-    }
-
-    .pay-and-feed::before {
-        top: 95px;
-    }
-
-    .pay-and-feed::after {
-        top: 155px;
-    }
-
-    .pay-and-feed__top {
-        margin-bottom: 55px;
-    }
-}
-
-@media (max-width: 1480px) {
-
-    html {
-        overflow-x: hidden;
-    }
-
-    .container {
-        width: 1200px;
-    }
-    
-    
-} */

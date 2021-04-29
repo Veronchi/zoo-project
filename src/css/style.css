@@ -23,7 +23,7 @@ body {
 .container {
   max-width: 1480px;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 0;
 }
 
 .header {
@@ -560,11 +560,31 @@ body {
   margin-bottom: 100px;
 }
 
-.pay-and-feed .container {
-  position: relative;
+.tree-container {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  height: 230px;
+  width: 130px;
+  background-image: url("../img/scene/tree1.svg");
+  background-repeat: no-repeat;
 }
 
-.pay-and-feed .container::before {
+.bamboo-container {
+  position: absolute;
+  top: 215px;
+  right: 20px;
+  width: 116px;
+  height: 221px;
+  background-image: url("../img/scene/Bamboo.svg");
+  background-repeat: no-repeat;
+}
+
+/* .pay-and-feed .container {
+  position: relative;
+} */
+
+/* .pay-and-feed .container::before {
   content: "";
   position: absolute;
   left: -200px;
@@ -573,9 +593,9 @@ body {
   width: 130px;
   background-image: url("../img/scene/tree1.svg");
   background-repeat: no-repeat;
-}
+} */
 
-.pay-and-feed .container::after {
+/* .pay-and-feed .container::after {
   content: "";
   position: absolute;
   top: 115px;
@@ -584,7 +604,7 @@ body {
   height: 221px;
   background-image: url("../img/scene/Bamboo.svg");
   background-repeat: no-repeat;
-}
+} */
 
 .pay-and-feed__top {
   display: flex;
