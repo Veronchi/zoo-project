@@ -97,6 +97,7 @@ body {
 
 .header__search {
   margin-right: 40px;
+  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -126,6 +127,10 @@ body {
   color: #C5E1E6;
   border: 1px solid #C5E1E6;
   border-radius: 50px;
+}
+
+.header__logIn-1200 {
+  display: none;
 }
 
 .hero-presentation {
@@ -579,32 +584,6 @@ body {
   background-image: url("../img/scene/Bamboo.svg");
   background-repeat: no-repeat;
 }
-
-/* .pay-and-feed .container {
-  position: relative;
-} */
-
-/* .pay-and-feed .container::before {
-  content: "";
-  position: absolute;
-  left: -200px;
-  top: 20px;
-  height: 230px;
-  width: 130px;
-  background-image: url("../img/scene/tree1.svg");
-  background-repeat: no-repeat;
-} */
-
-/* .pay-and-feed .container::after {
-  content: "";
-  position: absolute;
-  top: 115px;
-  right: -200px;
-  width: 116px;
-  height: 221px;
-  background-image: url("../img/scene/Bamboo.svg");
-  background-repeat: no-repeat;
-} */
 
 .pay-and-feed__top {
   display: flex;

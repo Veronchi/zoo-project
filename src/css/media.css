@@ -41,89 +41,162 @@
 }
 
 @media (min-width: 1201px) and (max-width: 1439px) {
-    .container {
-        padding: 0 5px;
-    }
+  .container {
+    padding: 0 5px;
+  }
 
-    .presentation__photo {
-        width: 100%;
-    }
+  .presentation__photo {
+    width: 100%;
+  }
 
-    .hero-presentation__right .presentation__photo-link::after {
-        top: 40%;
-        right: 45%;
-    }
+  .hero-presentation__right .presentation__photo-link::after {
+    top: 40%;
+    right: 45%;
+  }
 
-    .scene {
-        margin-bottom: 100px;
-    }
+  .scene {
+    margin-bottom: 100px;
+  }
 
-    .scene .vector-top {
-        background-size: auto;
-        background-position: center;
-    }
+  .scene .vector-top {
+    background-size: auto;
+    background-position: center;
+  }
 
-    .scene .vector-midle {
-        background-size: auto;
-        background-position: center;
-    }
+  .scene .vector-midle {
+    background-size: auto;
+    background-position: center;
+  }
 
-    .scene .vector-bottom {
-        background-size: auto;
-        background-position: center;
-    }
+  .scene .vector-bottom {
+    background-size: auto;
+    background-position: center;
+  }
 
-    .scene__inner .bamboo {
-        top: 5%;
-    }
+  .scene__inner .bamboo {
+    top: 5%;
+  }
 
-    .scene__inner .tree {
-        top: 20%;
-    }
+  .scene__inner .tree {
+    top: 20%;
+  }
 
-    .slider__list {
-        justify-content: space-around;
-    }
+  .slider__list {
+    justify-content: space-around;
+  }
 
-    .slider__controls {
-        margin-right: 2%;
-    }
+  .slider__controls {
+    margin-right: 2%;
+  }
 
-    .pay-and-feed {
-        background-size: auto;
-        background-position: center;
-    }
+  .pay-and-feed {
+    background-size: auto;
+    background-position: center;
+  }
 
-    .tree-container {
-        top: 25%;
-        left: 0%;
-    }
+  .tree-container {
+    top: 25%;
+    left: 0%;
+  }
 
-    .bamboo-container {
-        top: 33%;
-        right: 0%;
-    }
+  .bamboo-container {
+    top: 33%;
+    right: 0%;
+  }
 
-    .pay-and-feed__stages::before {
-        background-size: 80% 100%;
-        left: 25%;
-    }
+  .pay-and-feed__stages::before {
+    background-size: 80% 100%;
+    left: 25%;
+  }
 
-    .pay-and-feed__stages::after {
-        left: 59%;
-        background-size: 83% 100%;
-    }
-    
+  .pay-and-feed__stages::after {
+    left: 59%;
+    background-size: 83% 100%;
+  }
 
-    .animals__wrapper {
-        justify-content: space-around;
-    }
+  .animals__wrapper {
+    justify-content: space-around;
+  }
 
-    .animals-list {
-        margin-right: 25%;
-    }
+  .animals-list {
+    margin-right: 25%;
+  }
 
-    .animals-list__item + .animals-list__item {
-        margin-left: 12%;
-    }
+  .animals-list__item + .animals-list__item {
+    margin-left: 12%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+
+  .header__logIn  {
+    display: none;
+  }
+
+  .header__signUp {
+    display: none;
+  }
+
+  .header__search {
+    margin-right: 31px;
+  }
+
+  .header__logIn-1200 {
+    display: inline;
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+    background-color: #B9D5D9;
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+
+  .header__logIn-1200::after {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/icon-user.svg");
+    background-repeat: no-repeat;
+  }
+
+  .hero-presentation {
+    height: 655px;
+    background-size: cover;
+    background-position: left;
+  }
+
+  .presentation__photo {
+    width: 560px;
+    height: 464px;
+  }
+
+  .hero-presentation__right .presentation__photo-link::after {
+    top: 205px;
+    right: 215px;
+  }
+
+  .hero-presentation__title {
+    font-size: 64px;
+    line-height: 76px;
+    margin-bottom: 30px;
+  }
+
+  .hero-presentation__text {
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 37px;
+  }
+
+  .animals-list__item + .animals-list__item {
+    margin-left: 80px;
+  }
+
+  .animals-list__item.hidden {
+    display: none;
+  }
 }
