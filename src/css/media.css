@@ -132,7 +132,7 @@
     max-width: 1140px;
   }
 
-  .header__logIn  {
+  .header__logIn {
     display: none;
   }
 
@@ -150,7 +150,7 @@
     width: 56px;
     height: 56px;
     border-radius: 100%;
-    background-color: #B9D5D9;
+    background-color: #b9d5d9;
     padding-left: 16px;
     padding-top: 16px;
   }
@@ -190,6 +190,130 @@
     font-size: 16px;
     line-height: 30px;
     margin-bottom: 37px;
+  }
+
+  .how-it-works {
+    margin-bottom: 0;
+  }
+
+  .how-it-works__title {
+    top: -60px;
+  }
+
+  .how-it-works__list {
+    margin-top: 30px;
+  }
+
+  .how-it-works__item {
+    width: 365px;
+    height: 188px;
+  }
+
+  .scene {
+    margin-bottom: 95px;
+  }
+
+  .scene .vector-top {
+    background-position: left;
+    background-size: auto;
+  }
+
+  .scene .vector-midle {
+    background-position: left;
+    background-size: auto;
+  }
+
+  .scene .vector-bottom {
+    background-position: left;
+    background-size: auto;
+  }
+
+  .scene__inner .tree.third {
+    display: none;
+  }
+
+  .scene__inner .bamboo {
+    top: 70px;
+    left: -30px;
+  }
+
+  .scene__inner .tree {
+    top: 70px;
+    left: 21%;
+  }
+
+  .scene__inner .tree.second {
+    top: 131px;
+    left: 51%;
+  }
+
+  .scene__inner .panda {
+    top: 52%;
+    left: 77%;
+  }
+
+  .scene__inner .bamboo.second {
+    top: 40%;
+    left: 85%;
+  }
+
+  .pets-in-zoo {
+    margin-bottom: 88px;
+  }
+
+  .pets-in-zoo__link {
+    width: 303px;
+    font-size: 16px;
+    line-height: 40px;
+  }
+
+  .pets-in-zoo__link::before {
+    top: 8px;
+  }
+
+  .slider::after {
+    bottom: 30px;
+  }
+
+  .slider__list {
+    padding-left: 0;
+    justify-content: start;
+  }
+
+  .slider__card {
+    width: 336px;
+    height: 285px;
+    margin-right: 29px;
+    margin-bottom: 31px;
+  }
+
+  .slider__card-img {
+    width: 162px;
+    height: 157px;
+  }
+
+  .slider__card-bottom {
+    padding-top: 16px;
+    padding-left: 19px;
+  }
+
+  .slider__card-bottom::after {
+    right: 9px;
+  }
+
+  .slider__card-title {
+    font-size: 17px;
+    line-height: 20px;
+  }
+
+  .slider__card-text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  .pay-and-feed {
+    background-position: bottom;
+    background-size: auto;
   }
 
   .animals-list__item + .animals-list__item {
