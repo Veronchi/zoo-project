@@ -312,8 +312,63 @@
   }
 
   .pay-and-feed {
+    height: 565px;
     background-position: bottom;
     background-size: auto;
+  }
+
+  .bamboo-container {
+    display: none;
+  }
+
+  .tree-container {
+    top: 260px;
+    left: -60px;
+  }
+
+  .pay-and-feed__top {
+    padding-right: 72px;
+    margin-bottom: 72px;
+  }
+
+  .pay-and-feed__link {
+    display: none;
+  }
+
+  .pay-and-feed__link:hover {
+    display: none;
+  }
+
+  .pay-and-feed__link-1200 {
+    display: inline;
+    width: 174px;
+    background: #c5e1e6;
+    border-radius: 100px;
+    box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0d444d;
+  }
+
+  .pay-and-feed__link-1200:hover {
+    box-shadow: 0px 2px 50px rgba(13, 68, 77, 1);
+  }
+
+  .pay-and-feed__stage {
+    width: 367px;
+  }
+
+  .pay-and-feed__stage + .pay-and-feed__stage {
+    margin-left: 20px;
+  }
+
+  .pay-and-feed__stage .img__container {
+    margin-bottom: 14px;
   }
 
   .animals-list__item + .animals-list__item {

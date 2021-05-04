@@ -624,6 +624,10 @@ body {
   cursor: pointer;
 }
 
+.pay-and-feed__link-1200 {
+  display: none;
+}
+
 .pay-and-feed__link:hover {
   box-shadow: 0px 2px 50px rgba(13, 68, 77, 1);
 }
