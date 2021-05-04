@@ -164,6 +164,10 @@
     background-repeat: no-repeat;
   }
 
+  .header__logIn-1200:hover {
+    box-shadow: 0px 2px 50px rgb(13 68 77);
+  }
+
   .hero-presentation {
     height: 655px;
     background-size: cover;
@@ -258,7 +262,11 @@
   }
 
   .pets-in-zoo {
-    margin-bottom: 88px;
+    margin-bottom: 75px;
+  }
+
+  .pets-in-zoo__top {
+    margin-bottom: 56px;
   }
 
   .pets-in-zoo__link {
@@ -315,6 +323,7 @@
     height: 565px;
     background-position: bottom;
     background-size: auto;
+    margin-bottom: 50px;
   }
 
   .bamboo-container {
@@ -371,11 +380,65 @@
     margin-bottom: 14px;
   }
 
+  .pay-and-feed__stages::before {
+    background-image: url("../img/arrow-for-1200.svg");
+    width: 204px;
+    height: 52px;
+    left: 290px;
+  }
+
+  .pay-and-feed__stages::after {
+    background-image: url("../img/arrow-for-1200.svg");
+    width: 204px;
+    height: 52px;
+    left: 675px;
+  }
+
+  .testimonials {
+    margin-bottom: 50px;
+  }
+
+  .testimonials__top {
+    margin-bottom: 42px;
+  }
+
+  .testimonials__link {
+    width: 236px;
+    height: 40px;
+    font-size: 16px;
+    line-height: 10px;
+  }
+
+  .testimonials__link::before {
+    top: 6px;
+  }
+
+  .feedback__item + .feedback__item {
+    margin-left: 18px;
+  }
+
+  .look-at-animals {
+    margin-bottom: 50px;
+  }
+
+  .look-at-animals__title {
+    margin-bottom: 32px;
+  }
+
   .animals-list__item + .animals-list__item {
     margin-left: 80px;
   }
 
   .animals-list__item.hidden {
     display: none;
+  }
+
+  .footer .container {
+    padding-top: 17px;
+    padding-bottom: 20px;
+  }
+
+  .footer__info {
+    padding-top: 0;
   }
 }
