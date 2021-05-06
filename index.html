@@ -16,17 +16,42 @@
                 <img src="./src/img/Logo.svg" alt="logo" />
               </a>
               <nav class="navigation">
+                <div class="hamburger-menu">
+                  <input id="menu__toggle" type="checkbox" />
+                  <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                  </label>
+
+                  <ul class="menu__box">
+                    <li><a class="menu__item" href="#">about</a></li>
+                    <li><a class="menu__item" href="#">MAP</a></li>
+                    <li><a class="menu__item" href="#">zoos</a></li>
+                    <li><a class="menu__item" href="#">contact us</a></li>
+                    <li><a class="menu__item" href="#">design</a></li>
+                    <li><a class="menu__item" href="#">My account</a></li>
+                  </ul>
+                </div>
                 <ul class="navigation__list">
-                  <li class="navigation__item active"><a class="link" href="#">about</a></li>
-                  <li class="navigation__item"><a class="link" href="#">MAP</a></li>
-                  <li class="navigation__item"><a class="link" href="#">Zoos</a></li>
-                  <li class="navigation__item"><a class="link" href="#">contact us</a></li>
-                  <li class="navigation__item"><a class="link" href="#">design</a></li>
+                  <li class="navigation__item active">
+                    <a class="link" href="#">about</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="link" href="#">MAP</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="link" href="#">Zoos</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="link" href="#">contact us</a>
+                  </li>
+                  <li class="navigation__item">
+                    <a class="link" href="#">design</a>
+                  </li>
                 </ul>
               </nav>
             </div>
             <div class="header__content-right">
-              <input class="header__search-input" type="text">
+              <input class="header__search-input" type="text" />
               <button class="header__search" type="button">
                 <img src="./src/img/search.svg" alt="search" />
               </button>
@@ -60,40 +85,53 @@
             </div>
             <div class="hero-presentation__right">
               <a class="presentation__photo-link" href="#">
-                <img class="presentation__photo" src="./src/img/Hero-panda.svg" alt="panda"/>
+                <img
+                  class="presentation__photo"
+                  src="./src/img/Hero-panda.svg"
+                  alt="panda"
+                />
               </a>
             </div>
           </div>
         </div>
       </div>
 
-
       <div class="how-it-works">
         <div class="container">
           <h2 class="how-it-works__title">How it works</h2>
           <ul class="how-it-works__list">
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="./src/img/icon-binoculars.svg" alt="icon-binoculars"/>
-                <p class="how-it-works__text">
-                  Keep an eye on your favourite animals online
-                </p>
-            </li>
-            <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="./src/img/icon-heart.svg" alt="icon-heart"/>
+              <img
+                class="how-it-works__icon"
+                src="./src/img/icon-binoculars.svg"
+                alt="icon-binoculars"
+              />
               <p class="how-it-works__text">
-                Become a part of the communtity
+                Keep an eye on your favourite animals online
               </p>
             </li>
             <li class="how-it-works__item">
-              <img class="how-it-works__icon" src="./src/img/icon-trust.svg" alt="icon-trust"/>
+              <img
+                class="how-it-works__icon"
+                src="./src/img/icon-heart.svg"
+                alt="icon-heart"
+              />
+              <p class="how-it-works__text">Become a part of the communtity</p>
+            </li>
+            <li class="how-it-works__item">
+              <img
+                class="how-it-works__icon"
+                src="./src/img/icon-trust.svg"
+                alt="icon-trust"
+              />
               <p class="how-it-works__text">
-              Support animals with the donations
+                Support animals with the donations
               </p>
             </li>
           </ul>
         </div>
       </div>
-      
+
       <div class="scene">
         <div class="vector-top"></div>
         <div class="vector-midle"></div>
@@ -121,16 +159,26 @@
             <ul class="slider__list">
               <li class="slider__card">
                 <a class="slider__card-link" href="#">
-                  <img class="slider__card-img" src="./src/img/slider__img-panda.jpg" alt="panda" />
+                  <img
+                    class="slider__card-img"
+                    src="./src/img/slider__img-panda.jpg"
+                    alt="panda"
+                  />
                   <div class="slider__card-bottom">
                     <h3 class="slider__card-title">Pandas</h3>
-                    <p class="slider__card-text">Shenshuping Gengda Panda Center</p>
+                    <p class="slider__card-text">
+                      Shenshuping Gengda Panda Center
+                    </p>
                   </div>
                 </a>
               </li>
               <li class="slider__card">
                 <a class="slider__card-link" href="#">
-                  <img class="slider__card-img" src="./src/img/slider__img-eagle.jpg" alt="eagle"/>
+                  <img
+                    class="slider__card-img"
+                    src="./src/img/slider__img-eagle.jpg"
+                    alt="eagle"
+                  />
                   <div class="slider__card-bottom">
                     <h3 class="slider__card-title">Eagles</h3>
                     <p class="slider__card-text">Catalina Island</p>
@@ -139,7 +187,11 @@
               </li>
               <li class="slider__card">
                 <a class="slider__card-link" href="#">
-                  <img class="slider__card-img" src="./src/img/slider__img-gorilla.jpg" alt="gorilla"/>
+                  <img
+                    class="slider__card-img"
+                    src="./src/img/slider__img-gorilla.jpg"
+                    alt="gorilla"
+                  />
                   <div class="slider__card-bottom">
                     <h3 class="slider__card-title">Gorillas</h3>
                     <p class="slider__card-text">GRACE gorillas</p>
@@ -148,16 +200,26 @@
               </li>
               <li class="slider__card">
                 <a class="slider__card-link" href="#">
-                  <img class="slider__card-img" src="./src/img/slider__img-aligator.jpg" alt="aligator"/>
+                  <img
+                    class="slider__card-img"
+                    src="./src/img/slider__img-aligator.jpg"
+                    alt="aligator"
+                  />
                   <div class="slider__card-bottom">
                     <h3 class="slider__card-title">Aligators</h3>
-                    <p class="slider__card-text">St. Augustine's Alligator Farm Zoological Park</p>
+                    <p class="slider__card-text">
+                      St. Augustine's Alligator Farm Zoological Park
+                    </p>
                   </div>
                 </a>
               </li>
               <li class="slider__card">
                 <a class="slider__card-link" href="#">
-                  <img class="slider__card-img" src="./src/img/slider__img-elephant.jpg" alt="elephant"/>
+                  <img
+                    class="slider__card-img"
+                    src="./src/img/slider__img-elephant.jpg"
+                    alt="elephant"
+                  />
                   <div class="slider__card-bottom">
                     <h3 class="slider__card-title">Elephants</h3>
                     <p class="slider__card-text">Tembe Elephant Park</p>
@@ -166,7 +228,11 @@
               </li>
               <li class="slider__card">
                 <a class="slider__card-link" href="#">
-                  <img class="slider__card-img" src="./src/img/slider__img-lemur.jpg" alt="lemur"/>
+                  <img
+                    class="slider__card-img"
+                    src="./src/img/slider__img-lemur.jpg"
+                    alt="lemur"
+                  />
                   <div class="slider__card-bottom">
                     <h3 class="slider__card-title">Lemurs</h3>
                     <p class="slider__card-text">Madagascar</p>
@@ -187,30 +253,32 @@
         <div class="container">
           <div class="pay-and-feed__top">
             <h3 class="pay-and-feed__title">Pay and feed</h3>
-              <div class="pay-and-feed__link">
-                <a href="#">Donate to volunteers</a>
-              </div>
-              <div class="pay-and-feed__link-1200">
-                <a href="#">Donate</a>
-              </div>
+            <div class="pay-and-feed__link">
+              <a href="#">Donate to volunteers</a>
+            </div>
+            <div class="pay-and-feed__link-1200">
+              <a href="#">Donate</a>
+            </div>
           </div>
           <div class="pay-and-feed__stages">
             <ul class="pay-and-feed__list">
               <li class="pay-and-feed__stage">
                 <div class="img__container">
-                  <img src="./src/img/icon-donate.svg" alt="icon-donate">
+                  <img src="./src/img/icon-donate.svg" alt="icon-donate" />
                 </div>
-                <p class="stage__text">You donate to your favourite animals </p>
+                <p class="stage__text">You donate to your favourite animals</p>
               </li>
               <li class="pay-and-feed__stage">
                 <div class="img__container">
-                  <img src="./src/img/icon-trust-donate.svg" alt="icon-trust">
+                  <img src="./src/img/icon-trust-donate.svg" alt="icon-trust" />
                 </div>
-                <p class="stage__text">Zoo Keepers feed animals with their favourite food</p>
+                <p class="stage__text">
+                  Zoo Keepers feed animals with their favourite food
+                </p>
               </li>
               <li class="pay-and-feed__stage">
                 <div class="img__container">
-                  <img src="./src/img/icon-monkey.svg" alt="monkey">
+                  <img src="./src/img/icon-monkey.svg" alt="monkey" />
                 </div>
                 <p class="stage__text">Animals are healthy and happy</p>
               </li>
@@ -222,50 +290,66 @@
 
       <section class="testimonials">
         <div class="container">
-        <div class="testimonials__top">
-          <h3 class="testimonials__title">
-            Testimonials
-          </h3>
-          <a class="testimonials__link" href="#">
-            Leave feedback
-          </a>
+          <div class="testimonials__top">
+            <h3 class="testimonials__title">Testimonials</h3>
+            <a class="testimonials__link" href="#"> Leave feedback </a>
+          </div>
+          <div class="feedback">
+            <ul class="feedback__list">
+              <li class="feedback__item">
+                <div class="feedback__item-top">
+                  <span class="feedback__date">20 Decepmer 2020</span>
+                  <p class="feedback__text">
+                    Awesome place to observe my favourite aligators at Florida,
+                    the quality of the video is great.
+                  </p>
+                </div>
+                <div class="feedback__item-bottom">
+                  <img
+                    class="feedback__img"
+                    src="./src/img/feedback-img1.png"
+                    alt="use-photo"
+                  />
+                  <span class="feedback__user-info">Adam, Spain</span>
+                </div>
+              </li>
+              <li class="feedback__item">
+                <div class="feedback__item-top">
+                  <span class="feedback__date">20 Decepmer 2020</span>
+                  <p class="feedback__text">
+                    Awesome place to observe my favourite aligators at Florida,
+                    the quality of the video is great.
+                  </p>
+                </div>
+                <div class="feedback__item-bottom">
+                  <img
+                    class="feedback__img"
+                    src="./src/img/feedback-img2.png"
+                    alt="use-photo"
+                  />
+                  <span class="feedback__user-info">Chris, Australia</span>
+                </div>
+              </li>
+              <li class="feedback__item">
+                <div class="feedback__item-top">
+                  <span class="feedback__date">20 Decepmer 2020</span>
+                  <p class="feedback__text">
+                    Awesome place to observe my favourite aligators at Florida,
+                    the quality of the video is great.
+                  </p>
+                </div>
+                <div class="feedback__item-bottom">
+                  <img
+                    class="feedback__img"
+                    src="./src/img/feedback-img3.png"
+                    alt="use-photo"
+                  />
+                  <span class="feedback__user-info">Amely, USA</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="feedback">
-          <ul class="feedback__list">
-            <li class="feedback__item">
-              <div class="feedback__item-top">
-                <span class="feedback__date">20 Decepmer 2020</span>
-                <p class="feedback__text">Awesome place to observe my favourite aligators at Florida, the quality of the video is great. </p>
-              </div>
-              <div class="feedback__item-bottom">
-                <img class="feedback__img" src="./src/img/feedback-img1.png" alt="use-photo">
-                <span class="feedback__user-info">Adam, Spain</span>
-              </div>
-            </li>
-            <li class="feedback__item">
-              <div class="feedback__item-top">
-                <span class="feedback__date">20 Decepmer 2020</span>
-                <p class="feedback__text">Awesome place to observe my favourite aligators at Florida, the quality of the video is great.</p>
-              </div>
-              <div class="feedback__item-bottom">
-                <img class="feedback__img" src="./src/img/feedback-img2.png" alt="use-photo">
-                <span class="feedback__user-info">Chris, Australia</span>
-              </div>
-            </li>
-            <li class="feedback__item">
-              <div class="feedback__item-top">
-                <span class="feedback__date">20 Decepmer 2020</span>
-                <p class="feedback__text">Awesome place to observe my favourite aligators at Florida, the quality of the video is great.</p>
-              </div>
-              <div class="feedback__item-bottom">
-                <img class="feedback__img" src="./src/img/feedback-img3.png" alt="use-photo">
-                <span class="feedback__user-info">Amely, USA</span>
-              </div>
-            </li>
-          </ul>
-        </div>
-
-      </div>
       </section>
 
       <div class="look-at-animals">
@@ -275,43 +359,71 @@
             <ul class="animals-list">
               <li class="animals-list__item">
                 <a class="animals-item__link" href="#">
-                  <img class="animals-item__img" src="./src/img/animals-item-panda.png" alt="panda">
+                  <img
+                    class="animals-item__img"
+                    src="./src/img/animals-item-panda.png"
+                    alt="panda"
+                  />
                   <span class="animals-item__text">Pandas</span>
                 </a>
               </li>
               <li class="animals-list__item">
                 <a class="animals-item__link" href="#">
-                  <img class="animals-item__img" src="./src/img/animals-item-gorilla.png" alt="gorilla">
+                  <img
+                    class="animals-item__img"
+                    src="./src/img/animals-item-gorilla.png"
+                    alt="gorilla"
+                  />
                   <span class="animals-item__text">Gorillas</span>
                 </a>
               </li>
               <li class="animals-list__item">
                 <a class="animals-item__link" href="#">
-                  <img class="animals-item__img" src="./src/img/animals-item-eagle.png" alt="eagle">
+                  <img
+                    class="animals-item__img"
+                    src="./src/img/animals-item-eagle.png"
+                    alt="eagle"
+                  />
                   <span class="animals-item__text">Eagles</span>
                 </a>
               </li>
               <li class="animals-list__item">
                 <a class="animals-item__link" href="#">
-                  <img class="animals-item__img" src="./src/img/animals-item-aligator.png" alt="aligator">
+                  <img
+                    class="animals-item__img"
+                    src="./src/img/animals-item-aligator.png"
+                    alt="aligator"
+                  />
                   <span class="animals-item__text">Aligators</span>
                 </a>
               </li>
               <li class="animals-list__item">
                 <a class="animals-item__link" href="#">
-                  <img class="animals-item__img" src="./src/img/animals-item-elephant.png" alt="elephant">
+                  <img
+                    class="animals-item__img"
+                    src="./src/img/animals-item-elephant.png"
+                    alt="elephant"
+                  />
                   <span class="animals-item__text">elephants</span>
                 </a>
               </li>
               <li class="animals-list__item">
                 <a class="animals-item__link" href="#">
-                  <img class="animals-item__img" src="./src/img/animals-item-lemur.png" alt="lemur">
+                  <img
+                    class="animals-item__img"
+                    src="./src/img/animals-item-lemur.png"
+                    alt="lemur"
+                  />
                   <span class="animals-item__text">LEMURS</span>
                 </a>
               </li>
               <li class="animals-list__item hidden">
                 <a class="animals-item__link" href="#">
-                  <img class="animals-item__img" src="./src/img/animals-item-panda.png" alt="panda">
+                  <img
+                    class="animals-item__img"
+                    src="./src/img/animals-item-panda.png"
+                    alt="panda"
+                  />
                   <span class="animals-item__text">PANDAS</span>
                 </a>
               </li>
@@ -323,7 +435,6 @@
           </div>
         </div>
       </div>
-
     </main>
 
     <footer class="footer">
@@ -334,19 +445,27 @@
           </a>
           <nav class="navigation">
             <ul class="navigation__list">
-              <li class="navigation__item"><a class="link" href="#">about</a></li>
+              <li class="navigation__item">
+                <a class="link" href="#">about</a>
+              </li>
               <li class="navigation__item"><a class="link" href="#">MAP</a></li>
-              <li class="navigation__item"><a class="link" href="#">Zoos</a></li>
-              <li class="navigation__item"><a class="link" href="#">contact us</a></li>
-              <li class="navigation__item"><a class="link" href="#">design</a></li>
+              <li class="navigation__item">
+                <a class="link" href="#">Zoos</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link" href="#">contact us</a>
+              </li>
+              <li class="navigation__item">
+                <a class="link" href="#">design</a>
+              </li>
             </ul>
           </nav>
         </div>
         <div class="footer__info">
           <p class="footer__info-design">Design by Lemeshko Kateryna</p>
-          <p class="footer__info-copyright"> ©RSSchool and ©Yem Digital 2021</p>
+          <p class="footer__info-copyright">©RSSchool and ©Yem Digital 2021</p>
         </div>
-    </div>
+      </div>
     </footer>
 
     <script src="./dist/main.js"></script>

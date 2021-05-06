@@ -18,6 +18,8 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  /* overflow-x: hidden; */
+  min-width: 320px;
 }
 
 .container {
@@ -50,6 +52,10 @@ body {
 
 .header__content-left .link__logo {
   margin-right: 50px;
+}
+
+.hamburger-menu {
+  display: none;
 }
 
 .navigation__list {
@@ -204,6 +210,10 @@ body {
   margin-top: 18px;
 }
 
+.hero-presentation__right .presentation__photo-link {
+  cursor: default;
+}
+
 .hero-presentation__right .presentation__photo-link::after {
   content: url("../img/hero-play.png");
   position: absolute;
@@ -211,6 +221,7 @@ body {
   height: 120px;
   top: 300px;
   right: 330px;
+  cursor: pointer;
 }
 
 .how-it-works {
