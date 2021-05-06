@@ -448,12 +448,44 @@
 }
 
 @media (max-width: 1125px) {
+  .container {
+    padding: 0 5px;
+  }
+
+  .hero-presentation__title {
+    font-size: 50px;
+    line-height: 50px;
+  }
+
+  .hero-presentation__text {
+    width: auto;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  
+  .hero-presentation__right {
+    min-width: 255px;
+    margin-top: 0;
+  }
+
+  .presentation__photo {
+    width: 100%;
+  }
+
+  .slider__list {
+    justify-content: center;
+  }
+
   .pay-and-feed__stages::before {
     left: 270px;
+    width: 190px;
+    background-size: cover;
   }
 
   .pay-and-feed__stages::after {
     left: 650px;
+    width: 190px;
+    background-size: cover;
   }
 
   .animals-list {
@@ -468,8 +500,11 @@
 
   .footer__left {
     width: 100%;
+    justify-content: start;
   }
 }
+
+
 
 /* @media (min-width: 641px) and (max-width: 1199px) {
 
