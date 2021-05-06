@@ -505,12 +505,22 @@
 }
 
 @media (max-width: 1100px) {
+  .pay-and-feed {
+    background-image: url("../img/Pay-and-feed-1200.svg");
+    background-position: right;
+  }
+
+  .pay-and-feed__stage {
+    max-width: 367px;
+    text-align: center;
+  }
+
   .pay-and-feed__stages::before {
     background-image: url("../img/arrow-short.svg");
     width: 65px;
     height: 65px;
     top: 45px;
-    left: 325px;
+    left: 30%;
   }
 
   .pay-and-feed__stages::after {
@@ -518,7 +528,7 @@
     width: 65px;
     height: 65px;
     top: 45px;
-    left: 700px;
+    left: 64%;
   }
 }
 
