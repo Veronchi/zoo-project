@@ -132,6 +132,10 @@
     max-width: 1140px;
   }
 
+  .navigation__item + .navigation__item {
+    margin-left: 42px;
+  }
+
   .header__logIn {
     display: none;
   }
@@ -442,3 +446,120 @@
     padding-top: 0;
   }
 }
+
+@media (max-width: 1125px) {
+  .pay-and-feed__stages::before {
+    left: 270px;
+  }
+
+  .pay-and-feed__stages::after {
+    left: 650px;
+  }
+
+  .animals-list {
+    justify-content: space-between;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .animals-list__item + .animals-list__item {
+    margin-left: 0;
+  }
+
+  .footer__left {
+    width: 100%;
+  }
+}
+
+/* @media (min-width: 641px) and (max-width: 1199px) {
+
+  .container {
+    padding: 0 5px;
+  } 
+
+  .header__content-left  {
+    width: 100%;
+  }
+
+  .header__content-left .link__logo {
+    margin-right: 5%;
+  }
+
+  .navigation {
+    width: 100%;
+  }
+
+  .navigation__list {
+    justify-content: flex-start;
+  }
+
+  .navigation__item + .navigation__item {
+    margin-left: 5%;
+  }
+
+  .navigation__item {
+    font-size: 16px;
+  }
+
+  .hero-presentation{
+    height: 600px;
+  }
+  
+  .hero-presentation__title {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .hero-presentation__text {
+    width: auto;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .hero-presentation__right {
+    min-width: 255px;
+    margin-top: 0;
+  }
+
+  .presentation__photo {
+    width: 100%;
+  }
+
+  .scene__inner .bamboo.second {
+    left: 81%;
+  }
+
+  .scene__inner .panda {
+    left: 73%;
+  }
+
+  .pets-in-zoo {
+    margin-bottom: 45px;
+  }
+
+  .slider__list {
+    justify-content: center;
+  }
+
+  /* .pay-and-feed {
+    background-image: url("../img/Pay-and-feed-1200.svg");
+    padding-top: 25%;
+  }
+
+  .pay-and-feed__top {
+    margin-bottom: 60px;
+    padding-right: 0;
+  } */
+
+  /* .pay-and-feed__stages::after {
+    display: none;
+  } */
+
+  /* .animals-list__item.hidden   {
+    display: none;
+  } */
+
+  /* .footer__info {
+    display: none;
+  } */
+/* }  */
