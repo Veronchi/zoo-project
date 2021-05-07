@@ -201,6 +201,10 @@ body {
   color: #0d444d;
 }
 
+.hero-presentation__link-640 {
+  display: none;
+}
+
 .hero-presentation__link:hover {
   box-shadow: 0px 2px 50px rgba(13, 68, 77, 1);
 }
@@ -215,8 +219,10 @@ body {
 }
 
 .hero-presentation__right .presentation__photo-link::after {
-  content: url("../img/hero-play.png");
+  content: "";
   position: absolute;
+  background-image: url("../img/hero-play.png");
+  background-repeat: no-repeat;
   width: 120px;
   height: 120px;
   top: 300px;

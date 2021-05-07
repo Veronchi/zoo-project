@@ -732,12 +732,12 @@
     font-size: 18px;
     line-height: 24px;
     text-transform: uppercase;
-    color: #F3F7F8;
+    color: #f3f7f8;
     text-decoration: none;
   }
 
   .menu__item:hover {
-    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2); 
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
   }
 
   /* #menu__toggle:checked ~ .menu__btn > span {
@@ -772,5 +772,148 @@
 
   .menu__item {
     transition-duration: 0.25s;
+  }
+
+  .hero-presentation {
+    height: 410px;
+    background-image: url("../img/hero-background-for-640px.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  }
+
+  .hero-presentation__left {
+    padding-top: 0;
+  }
+
+  .presentation__photo {
+    height: auto;
+  }
+
+  .hero-presentation__title {
+    font-size: 36px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
+
+  .hero-presentation__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+  }
+
+  .hero-presentation__link {
+    width: 170px;
+    line-height: 37px;
+    font-size: 14px;
+    margin-right: 16px;
+  }
+
+  .hero-presentation__link-640 {
+    display: inline-block;
+    text-align: center;
+    width: 174px;
+    background: #c5e1e6;
+    border-radius: 100px;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 37px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #0d444d;
+    box-shadow: 0px 2px 20px rgba(185, 213, 217, 0.6);
+  }
+
+  .hero-presentation__link-640:hover {
+    box-shadow: 0px 2px 50px rgba(13, 68, 77, 1);
+  }
+
+  .presentation__photo-link {
+    max-width: 255px;
+  }
+
+  .presentation__photo {
+    width: 100%;
+  }
+
+  .hero-presentation__right .presentation__photo-link::after {
+    width: 84px;
+    height: 84px;
+    background-image: url("../img/hero-play-640.png");
+    background-repeat: no-repeat;
+    top: 23%;
+    right: 35%;
+  }
+
+  .how-it-works__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .how-it-works__item {
+    width: 188px;
+    height: 192px;
+  }
+
+  .scene {
+    background-image: url("../img/scene/scene-Illustration-640.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .scene__inner {
+    height: 291px;
+  }
+
+  .scene .vector-top {
+    display: none;
+  }
+
+  .scene .vector-midle {
+    display: none;
+  }
+
+  .scene .vector-bottom {
+    display: none;
+  }
+
+  .scene__inner .bamboo {
+    display: none;
+  }
+
+  .scene__inner .tree {
+    top: 30px;
+    left: 3%;
+    background-image: url("../img/scene/tree1-640.svg");
+    width: 72px;
+    height: 127px;
+  }
+
+  .scene__inner .tree.second {
+    top: 68px;
+    left: 35%;
+    background-image: url("../img/scene/tree2-640.svg");
+    width: 49px;
+    height: 87px;
+  }
+
+  .scene__inner .panda {
+    top: 49%;
+    left: 61%;
+    background-image: url("../img/scene/Panda-640.svg");
+    width: 90px;
+    height: 86px;
+  }
+
+  .scene__inner .bamboo.second {
+    display: inline;
+    top: 27%;
+    left: 68%;
+    background-image: url("../img/scene/Bamboo-640.svg");
+    width: 81px;
+    height: 155px;
   }
 }
