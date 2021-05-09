@@ -741,9 +741,7 @@ body {
 .testimonials__link {
   position: relative;
   width: 255px;
-  height: 52px;
   padding-left: 36px;
-  padding-top: 12px;
   text-align: center;
   border: 1.5px solid #19707d;
   border-radius: 100px;
@@ -751,7 +749,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 52px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #19707d;
@@ -766,7 +764,7 @@ body {
   content: "";
   position: absolute;
   left: 20px;
-  top: 12px;
+  top: 15px;
   width: 24px;
   height: 24px;
   background-image: url("../img/testimonial-link-icon.svg");

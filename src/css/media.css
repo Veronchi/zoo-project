@@ -408,13 +408,12 @@
 
   .testimonials__link {
     width: 236px;
-    height: 40px;
     font-size: 16px;
-    line-height: 10px;
+    line-height: 40px;
   }
 
   .testimonials__link::before {
-    top: 6px;
+    top: 9px;
   }
 
   .feedback__item + .feedback__item {
@@ -622,8 +621,12 @@
 }
 
 @media (max-width: 640px) {
+  .container {
+    padding: 0 10px;
+  }
+
   .header {
-    height: 78px;
+    height: 80px;
   }
 
   .header__inner {
@@ -780,6 +783,7 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
+    padding-top: 33px;
   }
 
   .hero-presentation__left {
@@ -915,5 +919,171 @@
     background-image: url("../img/scene/Bamboo-640.svg");
     width: 81px;
     height: 155px;
+  }
+
+  .pets-in-zoo {
+    margin-bottom: 50px;
+  }
+
+  .pets-in-zoo__top {
+    margin-bottom: 28px;
+  }
+
+  .pets-in-zoo__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .pets-in-zoo__link {
+    width: 269px;
+    font-size: 14px;
+    line-height: 37px;
+    padding-left: 35px;
+    padding-right: 0;
+  }
+
+  .pets-in-zoo__link::before {
+    top: 9px;
+    left: 18px;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+  }
+
+  .hidden-640 {
+    display: none;
+  }
+
+  .slider__card {
+    width: 256px;
+    height: 298px;
+  }
+
+  .slider__card-bottom::after {
+    right: 20px;
+    top: -195px;
+  }
+
+  .slider__card.right-card {
+    margin-right: 0;
+  }
+
+  .slider__controls {
+    margin-right: 16px;
+  }
+
+  .pay-and-feed {
+    height: 361px;
+    background-image: url("../img/pay-and-feed-640.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 0;
+    padding-top: 70px;
+  }
+
+  .tree-container {
+    display: none;
+  }
+
+  .pay-and-feed__top {
+    margin-bottom: 40px;
+    padding-right: 20px;
+    justify-content: space-around;
+  }
+
+  .pay-and-feed__stage {
+    max-width: 186px;
+  }
+
+  .pay-and-feed__stages::before {
+    top: 27px;
+    left: 27%;
+  }
+
+  .pay-and-feed__stage .img__container {
+    width: 113px;
+    height: 113px;
+    padding-top: 37px;
+  }
+
+  .pay-and-feed__stages::after {
+    top: 27px;
+    left: 62%;
+  }
+
+  .pay-and-feed__stage .img__container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .testimonials__top {
+    margin-bottom: 27px;
+  }
+
+  .testimonials__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .testimonials__link {
+    width: 210px;
+    font-size: 14px;
+    line-height: 37px;
+    padding-left: 30px;
+  }
+
+  .testimonials__link::before {
+    top: 8px;
+    left: 18px;
+  }
+
+  .look-at-animals {
+    margin-bottom: 26px;
+  }
+
+  .animals-list {
+    justify-content: start;
+  }
+
+  .animals-list__item + .animals-list__item {
+    margin-left: 42px;
+  }
+
+  .btn-controls {
+    margin-right: 10px;
+  }
+
+  .footer .container {
+    padding-top: 27px;
+    padding-bottom: 23px;
+  }
+
+  .footer__left .link__logo img {
+    display: none;
+  }
+
+  .footer__left .link__logo {
+    width: 55px;
+    height: 45px;
+    background-image: url("../img/Logo-small.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .footer__info {
+    width: 100%;
+  }
+
+  .footer__info-design {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
+    margin-bottom: 5px;
+  }
+
+  .footer__info-copyright {
+    font-size: 10px;
+    line-height: 12px;
+    text-align: right;
   }
 }
