@@ -1087,3 +1087,80 @@
     text-align: right;
   }
 }
+
+@media (min-width: 592px) and (max-width: 639px) {
+  .right-card-640 {
+    margin-right: 29px;
+  }
+}
+
+
+@media (min-width: 321px) and (max-width: 591px) {
+  .hero-presentation {
+    height: 100%;
+    padding-top: 15px;
+    padding-bottom: 60px;
+    margin-bottom: 32px;
+    background-image: url("../img/Hero-320.png");
+  }
+
+  .hero-presentation__content {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-presentation__left {
+    width: 100%;
+  }
+
+  .hero-presentation__link {
+    width: 139px;
+    margin-right: 10px;
+  }
+
+  .hero-presentation__link-640 {
+    width: 139px;
+  }
+
+  .how-it-works {
+    position: unset;
+  }
+
+  .how-it-works__title {
+    position: unset;
+  }
+
+  .how-it-works__list {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .scene {
+    margin-bottom: 50px;
+  }
+
+  .pets-in-zoo__link {
+    width: 235px;
+    padding-left: 15px;
+    font-size: 12px;
+  }
+
+  .pets-in-zoo__link::before {
+    left: 3px;
+  }
+
+  .slider__card {
+    margin-right: 0;
+  }
+
+  .pay-and-feed {
+    height: 100%;
+  }
+
+  .pay-and-feed__list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
