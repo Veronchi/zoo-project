@@ -958,9 +958,14 @@
     display: none;
   }
 
+  .slider__list {
+    justify-content: center;
+  }
+
   .slider__card {
     width: 256px;
     height: 298px;
+    margin-right: 20px;
   }
 
   .slider__card-bottom::after {
@@ -1097,11 +1102,18 @@
     margin-right: 29px;
   }
 
+  .hero-presentation__link {
+    width: 140px;
+  }
+
+  .hero-presentation__link-640 {
+    width: 140px;
+  }
 
 }
 
 
-@media (min-width: 321px) and (max-width: 591px) {
+@media (max-width: 591px) {
   .menu__box {
     width: 100%;
   }
@@ -1252,4 +1264,8 @@
     margin-left: 10px;
   }
 
+}
+
+@media (max-width: 320px) {
+  
 }
