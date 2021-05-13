@@ -1284,7 +1284,20 @@
     display: none;
   }
 
+  .slider__list  {
+    justify-content: flex-end;
+  }
+
   .slider::after {
+    display: none;
+  }
+
+  .slider__card {
+    width: 240px;
+    display: inline-block;
+  }
+
+  .slider__card.hidden-320 {
     display: none;
   }
 
@@ -1390,6 +1403,60 @@
   .pay-and-feed__stages::after {
     top: 64%;
     left: 40%;
+  }
+  
+  .testimonials {
+    margin-bottom: 42px;
+  }
+
+  .testimonials__top {
+    margin-bottom: 30px;
+  }
+
+  .testimonials__link {
+    display: none;
+  }
+
+  .feedback {
+    margin-bottom: 24px;
+  }
+
+  .testimonials-320 {
+    display: block;
+  }
+
+  .testimonials__link-320 {
+    position: relative;
+    width: 300px;
+    padding-left: 36px;
+    text-align: center;
+    border: 1.5px solid #19707d;
+    border-radius: 100px;
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #19707d;
+  }
+
+  .testimonials__link-320:hover {
+    background-color: #c5e1e6;
+    border: 1.5px solid #ffffff;
+  }
+  
+  .testimonials__link-320::before {
+    content: "";
+    position: absolute;
+    left: 65px;
+    top: 9px;
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/testimonial-link-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
 }

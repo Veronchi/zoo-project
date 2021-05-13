@@ -780,6 +780,10 @@ body {
   background-size: cover;
 }
 
+.testimonials-320 {
+  display: none;
+}
+
 .feedback__list {
   display: flex;
   justify-content: space-around;
