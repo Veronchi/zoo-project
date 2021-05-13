@@ -1,5 +1,6 @@
 import './css/fonts.css';
 import './css/style.css';
+import './css/mapp.css';
 import './css/normalize.css';
 import './css/media.css';
 
