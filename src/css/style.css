@@ -934,6 +934,10 @@ body {
   padding-bottom: 14px;
 }
 
+.btn-controls-320 {
+  display: none;
+}
+
 .animal-list__btn {
   position: relative;
   width: 42px;

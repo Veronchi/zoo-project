@@ -741,7 +741,7 @@
   }
 
   .menu__item:hover {
-    background: #C5E1E6;
+    background: #c5e1e6;
     opacity: 0.9;
     color: #f3f7f8;
     box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
@@ -1109,9 +1109,7 @@
   .hero-presentation__link-640 {
     width: 140px;
   }
-
 }
-
 
 @media (max-width: 591px) {
   .menu__box {
@@ -1263,7 +1261,6 @@
   .animals-list__item {
     margin-left: 10px;
   }
-
 }
 
 @media (max-width: 320px) {
@@ -1284,7 +1281,7 @@
     display: none;
   }
 
-  .slider__list  {
+  .slider__list {
     justify-content: flex-end;
   }
 
@@ -1327,12 +1324,12 @@
     text-transform: uppercase;
     color: #19707d;
   }
-  
+
   .pets-in-zoo__link-320:hover {
     background-color: #c5e1e6;
     border: 1.5px solid #ffffff;
   }
-  
+
   .pets-in-zoo__link-320::before {
     content: "";
     position: absolute;
@@ -1343,7 +1340,7 @@
     background-image: url("../img/pets-in-zoo-icon-heart.svg");
     background-repeat: no-repeat;
   }
-  
+
   .pay-and-feed {
     padding-bottom: 90px;
     padding-top: 48px;
@@ -1404,7 +1401,7 @@
     top: 64%;
     left: 40%;
   }
-  
+
   .testimonials {
     margin-bottom: 42px;
   }
@@ -1446,7 +1443,7 @@
     background-color: #c5e1e6;
     border: 1.5px solid #ffffff;
   }
-  
+
   .testimonials__link-320::before {
     content: "";
     position: absolute;
@@ -1459,4 +1456,69 @@
     background-size: cover;
   }
 
+  .look-at-animals {
+    margin-bottom: 12px;
+  }
+
+  .look-at-animals__title {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .animals__wrapper {
+    display: block;
+  }
+
+  .animals-list {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 270px;
+  }
+
+  .animals-list__item {
+    margin-left: 0;
+    width: 100px;
+  }
+
+  .animals-list__item.hidden-640 {
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100px;
+    height: 130px;
+  }
+
+  .btn-controls {
+    display: none;
+  }
+
+  .btn-controls-320 {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .btn-controls-320 .animal-list__btn {
+    position: relative;
+
+    width: 52px;
+    height: 52px;
+  }
+
+  .btn-controls-320 .animal-list__btn::before {
+    content: "";
+    position: absolute;
+    top: 17px;
+    left: 18px;
+    background-image: url("../img/slider__btn-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(-90deg);
+    width: 15px;
+    height: 21px;
+  }
 }
