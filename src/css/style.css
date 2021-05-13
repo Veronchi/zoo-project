@@ -436,6 +436,10 @@ body {
   background-repeat: no-repeat;
 }
 
+.btn-320 {
+  display: none;
+}
+
 .slider {
   display: flex;
   align-items: center;
