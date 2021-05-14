@@ -37,10 +37,10 @@
                       </ul>
                     </div>
                     <ul class="navigation__list">
-                      <li class="navigation__item active">
+                      <li class="navigation__item">
                         <a class="link" href="#">about</a>
                       </li>
-                      <li class="navigation__item">
+                      <li class="navigation__item active">
                         <a class="link" href="#">MAP</a>
                       </li>
                       <li class="navigation__item">
@@ -56,10 +56,16 @@
                   </nav>
                 </div>
                 <div class="header__content-right">
-                  <input class="header__search-input" type="text" />
+                  <input id="search__toggle" type="checkbox">
+                  <label class="search__btn header__search" for="search__toggle">
+                    <img src="./src/img/search.svg" alt="search"/>
+                  </label>
+
+                  <input class="header__search-input" type="text"/>
+                  <!-- 
                   <button class="header__search" type="button">
-                    <img src="./src/img/search.svg" alt="search" />
-                  </button>
+                    <img src="./src/img/search.svg" alt="search"/>
+                  </button> -->
                   <a class="header__logIn" href="#">
                     <p>Log in</p>
                   </a>
