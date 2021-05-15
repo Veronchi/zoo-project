@@ -1,0 +1,79 @@
+.map {
+  background-color: #2a8086;
+}
+
+/* .map__inner {
+  margin-bottom: 16px;
+} */
+
+.map__title {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #c5e1e6;
+  margin-bottom: 65px;
+}
+
+.map__img {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+}
+
+.map__img img {
+  max-width: 1410px;
+}
+
+.map__img-controls {
+  width: 100%;
+  align-self: flex-end;
+  display: flex;
+  margin-right: 10px;
+}
+
+.map__img-controls .control {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1.5px solid #FFFFFF;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.map__img-controls .control:hover {
+  box-shadow: 0px 2px 50px rgb(13 68 77);;
+}
+
+.control.plus::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/map-plus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.control.minus {
+  margin-left: 15px;
+}
+
+.control.minus::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/map-minus.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
