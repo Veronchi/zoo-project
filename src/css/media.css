@@ -424,6 +424,10 @@
     margin-bottom: 32px;
   }
 
+  .animals-list {
+    margin-right: 36px;
+  }
+
   .animals-list__item + .animals-list__item {
     margin-left: 80px;
   }
@@ -445,6 +449,10 @@
 @media (max-width: 1125px) {
   .container {
     padding: 0 5px;
+  }
+
+  .hero-presentation {
+    margin-top: -1px;
   }
 
   .hero-presentation__title {
@@ -500,6 +508,27 @@
 }
 
 @media (max-width: 1100px) {
+  .header__content-left .link__logo img {
+    display: none;
+  }
+
+  .header__content-left .link__logo {
+    width: 85px;
+    height: 66px;
+    margin-right: 3%;
+    background-image: url("../img/Logo-small.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navigation__item + .navigation__item {
+    margin-left: 10px;
+  }
+
+  .hero-presentation__text {
+    margin-bottom: 20px;
+  }
+
   .pay-and-feed {
     background-image: url("../img/Pay-and-feed-1200.svg");
     background-position: right;
@@ -529,6 +558,10 @@
 }
 
 @media (max-width: 760px) {
+  .navigation__item  {
+    font-size: 16px;
+  }
+
   .hero-presentation__left {
     padding-top: 20px;
   }
@@ -555,12 +588,25 @@
     padding: 0 5px;
   }
 
+  .header {
+    height: 100px;
+  }
+
   .header__content-left {
     width: 100%;
   }
 
+  .header__inner {
+    height: 95px;
+  }
+
   .header__content-left .link__logo {
-    margin-right: 5%;
+    width: 70px;
+    height: 45px;
+  }
+
+  .header__content-left .link__logo {
+    margin-right: 4%;
   }
 
   .navigation {
@@ -572,11 +618,11 @@
   }
 
   .navigation__item + .navigation__item {
-    margin-left: 5%;
+    margin-left: 3%;
   }
 
   .navigation__item {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .hero-presentation {
@@ -612,7 +658,7 @@
   }
 
   .animals-list__item {
-    width: 99px;
+    width: 95px;
   }
 }
 
@@ -629,16 +675,9 @@
     height: 73px;
   }
 
-  .header__content-left .link__logo img {
-    display: none;
-  }
-
   .header__content-left .link__logo {
     width: 55px;
     height: 45px;
-    background-image: url("../img/Logo-small.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
   }
 
   .navigation__list {
@@ -810,7 +849,6 @@
     width: 170px;
     line-height: 37px;
     font-size: 14px;
-    margin-right: 16px;
   }
 
   .hero-presentation__link-640 {
@@ -1098,12 +1136,28 @@
     margin-right: 29px;
   }
 
+  .menu__box {
+    width: 100%;
+  }
+
+  .hero-presentation__title {
+    margin-bottom: 10px;
+  }
+
+  .hero-presentation__text {
+    margin-bottom: 15px;
+  }
+
   .hero-presentation__link {
     width: 140px;
   }
 
   .hero-presentation__link-640 {
     width: 140px;
+  }
+
+  .animals-list__item + .animals-list__item {
+    margin-left: 35px;
   }
 }
 
@@ -1132,7 +1186,7 @@
 
   .hero-presentation__link {
     width: 139px;
-    margin-right: 10px;
+    /* margin-right: 10px; */
   }
 
   .hero-presentation__link-640 {
@@ -1260,6 +1314,24 @@
 }
 
 @media (max-width: 320px) {
+  body {
+    min-width: unset;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+
+  .hero-presentation__title {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .hero-presentation__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+
   .scene__inner .tree {
     display: none;
   }
@@ -1270,7 +1342,7 @@
   }
 
   .scene__inner .bamboo.second {
-    left: 76%;
+    left: 73%;
   }
 
   .pets-in-zoo__link {
@@ -1363,7 +1435,7 @@
   .pay-and-feed__link-320 {
     display: block;
     margin: 0 auto;
-    width: 300px;
+    width: 290px;
     height: 40px;
     text-align: center;
     background-color: #c5e1e6;
@@ -1416,12 +1488,14 @@
 
   .testimonials-320 {
     display: block;
+    text-align: center;
   }
 
   .testimonials__link-320 {
     position: relative;
-    width: 300px;
-    padding-left: 36px;
+    /* width: 300px; */
+    padding-left: 45px;
+    padding-right: 45px;
     text-align: center;
     border: 1.5px solid #19707d;
     border-radius: 100px;
@@ -1443,7 +1517,7 @@
   .testimonials__link-320::before {
     content: "";
     position: absolute;
-    left: 65px;
+    left: 10px;
     top: 9px;
     width: 24px;
     height: 24px;
@@ -1474,7 +1548,7 @@
 
   .animals-list__item {
     margin-left: 0;
-    width: 100px;
+    width: 95px;
   }
 
   .animals-list__item.hidden-640 {
