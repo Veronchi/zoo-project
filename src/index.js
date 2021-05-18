@@ -3,6 +3,7 @@ import './css/style.css';
 import './css/mapp.css';
 import './css/normalize.css';
 import './css/media.css';
+import './css/media-map.css';
 
 let [abc, baa, czz] = ["2", "3", "1"]
 

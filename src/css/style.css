@@ -45,6 +45,7 @@ body {
 }
 
 .header__content-left {
+  width: 100%;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -93,99 +94,88 @@ body {
 .header__content-right {
   display: flex;
   align-items: center;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
-#search__toggle {
-  opacity: 0;
-}
-
-.search__btn {
+.search {
   display: flex;
-  align-items: center;
-  position: absolute;
-  top: 39px;
-  right: 398px;
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  z-index: 3;
+  justify-content: space-between;
+  width: 200px;
+  margin-right: 40px;
 }
 
-.header__search-input {
-  display: block;
-  position: absolute;
-  visibility: hidden;
-  /* display: none;
-  margin-right: 20px; */
-  top: -100%;
-  left: 1240px;
-  width: 200px;
-  background-color: #c5e1e6;
-  border: transparent;
+.search .search__input {
+  height: 32px;
+  width: 0;
+  border: none;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  background: transparent;
+  transition: .4s cubic-bezier(0, 0.8, 0, 1);
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+.search .search__input:focus {
+  width: 168px;
+  z-index: 1;
+  border-bottom: 2px solid #0D444D;
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 21px;
   color: #0D444D;
 }
-
-.header__search-input:focus {
-  outline: 0;
-  box-shadow: 0px 2px 50px rgb(13 68 77);
-}
-
-#search__toggle:checked ~ .header__search-input{
-  visibility: visible;
-  left: 1240px;
-  top: 44px;
-  z-index: 2;
-}
-
-.header__search-input {
-  transition-duration: 0.25s;
-}
-
-.header__search {
-  margin-right: 40px;
-  padding: 0;
-  background-color: transparent;
+.search .search__btn {
+  display: block;
   border: none;
+  height: 32px;
+  width: 32px;
+  top: 0;
+  right: 0;
   cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/search.svg");
+  background-repeat: no-repeat;
 }
 
-.header__logIn {
+.auth {
+  display: flex;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+}
+
+.auth .auth__login {
   margin-right: 24px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 21px;
+  line-height: 52px;
   text-transform: uppercase;
   color: #c5e1e6;
 }
 
-.header__signUp {
-  width: 97px;
-  height: 52px;
+.auth .auth__signup {
+  padding: 0 14px;
   text-align: center;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
-  line-height: 15px;
+  line-height: 52px;
   text-transform: uppercase;
   color: #c5e1e6;
   border: 1px solid #c5e1e6;
   border-radius: 50px;
 }
 
-.header__signUp:hover {
+.auth .auth__signup:hover {
   box-shadow: 0px 2px 50px rgb(13 68 77);
 }
 
-.header__logIn-1200 {
+.auth .auth__logIn-1200 {
   display: none;
 }
 
