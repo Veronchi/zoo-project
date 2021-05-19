@@ -575,7 +575,7 @@
   }
 
   .navigation__item + .navigation__item {
-    margin-left: 20px;
+    margin-left: 15px;
   }
 
   .footer__info {
@@ -622,7 +622,7 @@
   }
 
   .navigation__item {
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .hero-presentation {
