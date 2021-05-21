@@ -376,7 +376,7 @@ body {
 
 .scene__inner .bamboo.second {
   top: 28%;
-  left: 55%;
+  left: 57%;
 }
 
 .scene__inner .tree {
@@ -1021,8 +1021,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 58px;
+  padding-bottom: 58px;
 }
 
 .footer__left {
