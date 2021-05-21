@@ -17,6 +17,7 @@
 @media (max-width: 1200px) {
   .map__img {
     height: 685px;
+    margin-bottom: 60px;
   }
   .search__btn {
     right: 8%;
@@ -50,6 +51,7 @@
 @media (min-width: 900px) and (max-width: 1199px) {
   .map__img {
     height: 685px;
+    margin-bottom: 0;
   }
 
   .map__link.eagle {
@@ -95,7 +97,8 @@
   }
 
   .map__img {
-    height: 430px;
+    height: 400px;
+    margin-bottom: 50px;
   }
 
   .map__title {
@@ -108,23 +111,35 @@
     width: 52px;
     height: 50px;
   }
+
+  .map__img-controls {
+    right: 10px;
+    bottom: 20px;
+  }
 }
 
-/* @media (min-width: 320px) and (max-width: 639px) {
+@media (min-width: 320px) and (max-width: 639px) {
+  .map__inner {
+    padding-bottom: 23px;
+    padding-top: 60px;
+  }
+
   .map__title {
     display: none;
   }
 
+  .map__wrapper {
+    overflow-x: scroll;
+  }
+
   .map__img {
-    height: 490px;
-    max-width: unset;
-    overflow-y: scroll;
-    background-image: none;
-  }
-
-  .map__img img{
     width: 622px;
-    height: 386px;
+    max-width: unset;
   }
 
-} */
+  .map__img-controls {
+    position: unset;
+    width: 80px;
+    margin-left: auto;
+  }
+}

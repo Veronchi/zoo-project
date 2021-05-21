@@ -4,6 +4,7 @@
 
 .map__inner {
   padding-bottom: 16px;
+  position: relative;
 }
 
 .map__title {
@@ -21,7 +22,7 @@
 
 .map__img {
   position: relative;
-  max-width: 100%;
+  max-width: 1420px;
   height: 912px;
   background-image: url("../img/map-img.svg");
   background-repeat: no-repeat;
@@ -31,7 +32,7 @@
 
 .map__link.eagle {
   position: absolute;
-  top: 40%;
+  top: 41%;
   left: 12%;
 }
 
@@ -50,13 +51,13 @@
 .map__link.panda {
   position: absolute;
   top: 44%;
-  left: 72%;
+  left: 73%;
 }
 
 .map__img-controls {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 25px;
 }
 
 .map__img-controls .control {
