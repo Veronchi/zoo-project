@@ -1,19 +1,128 @@
 .header.header__zoo {
-    height: 110px;
+  height: 110px;
+}
+
+.main__wrapper {
+  margin-top: 40px;
+  display: flex;
 }
 
 .side__menu {
-    position: sticky;
-    top: 0;
-    margin-top: 40px;
+  position: sticky;
+  top: 30px;
+  height: 644px;
+  width: 105px;
+  margin-right: 50px;
 }
 
 .side__menu-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .side__menu-item + .side__menu-item {
-    margin-top: 30px;
+  margin-top: 30px;
+}
+
+.side__menu-item {
+  width: 105px;
+  height: 131px;
+  text-align: center;
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #2D2D2D;
+}
+
+.side__menu-item img {
+  margin-bottom: 9px;
+}
+
+.main__inner {
+  height: 1690px;
+  width: 100%;
+}
+
+.main__inner-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.main__inner-title {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #0D444D;
+}
+
+.main__inner-icons{
+  display: flex;
+}
+
+.main__inner-icons .icon {
+  width: 42px;
+  height: 42px;
+  border: 1.5px solid #19707D;
+  border-radius: 100%;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.main__inner-icons .icon:hover {
+  background-color: #c5e1e6;
+  border: 1.5px solid #ffffff;
+}
+
+.icon.icon-i{
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: lowercase;
+  color: #19707D;
+}
+
+.icon.icon-heart {
+  position: relative;
+  margin-left: 35px;
+}
+
+.icon.icon-heart::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background-image: url("../img/small-heart.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+}
+
+.main-cameras__title {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #0D444D;
+}
+
+.main-video__wrapper {
+  margin-bottom: 55px;
 }
