@@ -15,7 +15,6 @@ let conf = {
             filename: 'map-page.html',
             template: './map-page.html'
         }),
-        new HtmlWebpackPlugin(),
         new HtmlWebpackPlugin({
             filename: 'error-page.html',
             template: './error-page.html'
