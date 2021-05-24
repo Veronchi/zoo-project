@@ -1,0 +1,19 @@
+.header.header__zoo {
+    height: 110px;
+}
+
+.side__menu {
+    position: sticky;
+    top: 0;
+    margin-top: 40px;
+}
+
+.side__menu-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.side__menu-item + .side__menu-item {
+    margin-top: 30px;
+}

@@ -18,6 +18,10 @@ let conf = {
         new HtmlWebpackPlugin({
             filename: 'error-page.html',
             template: './error-page.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'zoo-page.html',
+            template: './zoo-page.html'
         })
     ],
     module: {
