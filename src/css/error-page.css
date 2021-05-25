@@ -57,6 +57,10 @@
   height: 402px;
 }
 
+.error__scene .scene__inner {
+  height: 384px;
+}
+
 .error__scene .tree.first {
   top: 30px;
 }
@@ -67,7 +71,7 @@
 }
 
 .error__scene .panda {
-  top: 17%;
+  top: 20%;
 }
 
 .error__scene .bamboo.second {
@@ -76,7 +80,7 @@
 
 .error__scene .penguin {
   position: absolute;
-  top: 54%;
+  top: 72%;
   left: 25%;
   background-image: url("../img/Penguin.svg");
   background-size: cover;
