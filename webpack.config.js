@@ -10,7 +10,10 @@ let conf = {
     },
     devtool: 'inline-source-map',
     plugins: [
-        new HtmlWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            filename: 'index.html',
+            template: './index.html'
+        }),
         new HtmlWebpackPlugin({
             filename: 'map-page.html',
             template: './map-page.html'
@@ -20,8 +23,8 @@ let conf = {
             template: './error-page.html'
         }),
         new HtmlWebpackPlugin({
-            filename: 'zoo-page.html',
-            template: './zoo-page.html'
+            filename: 'panda.html',
+            template: './zoos/panda.html'
         })
     ],
     module: {

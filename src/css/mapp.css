@@ -1,4 +1,4 @@
-.map {
+ .map {
   background-color: #2a8086;
 }
 
@@ -28,6 +28,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.map__link {
+  position: relative;
+}
+
+.map__link:hover .tooltip {
+  visibility: visible;
 }
 
 .map__link.eagle {

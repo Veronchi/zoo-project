@@ -27,6 +27,7 @@
 }
 
 .side__menu-item {
+  position: relative;
   width: 105px;
   height: 131px;
   text-align: center;
@@ -36,7 +37,11 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: #2D2D2D;
+  color: #2d2d2d;
+}
+
+.side__menu-item:hover .tooltip {
+  visibility: visible;
 }
 
 .side__menu-item img {
@@ -64,17 +69,17 @@
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #0D444D;
+  color: #0d444d;
 }
 
-.main__inner-icons{
+.main__inner-icons {
   display: flex;
 }
 
 .main__inner-icons .icon {
   width: 42px;
   height: 42px;
-  border: 1.5px solid #19707D;
+  border: 1.5px solid #19707d;
   border-radius: 100%;
   background-color: transparent;
   cursor: pointer;
@@ -85,14 +90,14 @@
   border: 1.5px solid #ffffff;
 }
 
-.icon.icon-i{
+.icon.icon-i {
   font-family: "Roboto";
   font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
   text-transform: lowercase;
-  color: #19707D;
+  color: #19707d;
 }
 
 .icon.icon-heart {
@@ -121,7 +126,7 @@
   font-size: 18px;
   line-height: 21px;
   text-transform: capitalize;
-  color: #0D444D;
+  color: #0d444d;
 }
 
 .main-video__wrapper {
@@ -147,7 +152,7 @@
   font-size: 18px;
   line-height: 21px;
   text-transform: capitalize;
-  color: #0D444D;
+  color: #0d444d;
 }
 
 .side-cameras__list {
@@ -192,7 +197,7 @@
   font-size: 12px;
   line-height: 14px;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .side-cameras__controls {
@@ -203,7 +208,7 @@
 
 .information-block {
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .informaton {
@@ -220,7 +225,7 @@
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #0D444D;
+  color: #0d444d;
 }
 
 .informaton__list {
@@ -242,10 +247,10 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  color: #0D444D;
+  color: #0d444d;
 }
 
-.informaton__item a{
+.informaton__item a {
   text-decoration: underline;
   font-family: "Roboto";
   font-style: normal;
@@ -253,7 +258,7 @@
   font-size: 14px;
   line-height: 20px;
   text-decoration-line: underline;
-  color: #0D444D;
+  color: #0d444d;
 }
 
 .informaton__item span {
@@ -262,7 +267,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #0D444D;
+  color: #0d444d;
 }
 
 .facts {
@@ -279,7 +284,7 @@
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  color: #0D444D;
+  color: #0d444d;
 }
 
 .facts__list {
@@ -301,7 +306,7 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #0D444D;
+  color: #0d444d;
 }
 
 .zoo-scene.error__scene .scene__inner {
