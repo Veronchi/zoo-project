@@ -38,10 +38,32 @@
   visibility: visible;
 }
 
+.map__link .img-border {
+  background-image: url("../img/map-border.svg");
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 102px;
+  z-index: 1;
+  transition: linear 1s;
+}
+
+.map__link img {
+  width: 72px;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  z-index: 2;
+}
+
+.map__link:hover .img-border  {
+  transform: rotate(360deg);
+}
+
 .map__link.eagle {
   position: absolute;
   top: 41%;
-  left: 12%;
+  left: 10%;
 }
 
 .map__link.aligator {
@@ -108,4 +130,30 @@
   background-image: url("../img/map-minus.svg");
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.map__link {
+  position: relative;
+}
+
+.map__link .img-border {
+  background-image: url("../img/map-border.svg");
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 102px;
+  z-index: 1;
+  transition: linear 1s;
+}
+
+.map__link img {
+  width: 72px;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  z-index: 2;
+}
+
+.map__link:hover .img-border  {
+  transform: rotate(360deg);
 }
