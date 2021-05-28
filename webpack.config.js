@@ -33,6 +33,10 @@ let conf = {
         new HtmlWebpackPlugin({
             filename: 'gorilla.html',
             template: './zoos/gorilla.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'alligator.html',
+            template: './zoos/alligator.html'
         })
     ],
     module: {
