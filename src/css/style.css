@@ -932,7 +932,21 @@ body {
   margin-right: 50px;
 }
 
+.animals-list__item .img-border {
+  background-image: url("../img/map-border.svg");
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 102px;
+  z-index: 1;
+  transition: linear 1s;
+}
+
+.animals-list__item:hover .img-border {
+  transform: rotate(360deg);
+}
+
 .animals-list__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -948,6 +962,12 @@ body {
 
 .animals-item__img {
   margin-bottom: 8px;
+  width: 72px;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  z-index: 2;
 }
 
 .animals-item__text {
