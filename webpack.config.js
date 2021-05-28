@@ -25,6 +25,10 @@ let conf = {
         new HtmlWebpackPlugin({
             filename: 'panda.html',
             template: './zoos/panda.html'
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'eagle.html',
+            template: './zoos/eagle.html'
         })
     ],
     module: {
