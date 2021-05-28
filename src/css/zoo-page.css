@@ -40,12 +40,36 @@
   color: #2d2d2d;
 }
 
+.side__menu-item .img-border {
+  background-image: url("../img/map-border.svg");
+  background-repeat: no-repeat;
+  width: 105px;
+  height: 102px;
+  z-index: 1;
+  transition: linear 1s;
+}
+
+.side__menu-item.active .img-border {
+  background-image: url("../img/img-border-active.svg");
+  background-size: cover;
+}
+
+.side__menu-item:hover .img-border {
+  transform: rotate(360deg);
+}
+
 .side__menu-item:hover .tooltip {
   visibility: visible;
 }
 
 .side__menu-item img {
   margin-bottom: 9px;
+  width: 72px;
+  height: 70px;
+  position: absolute;
+  top: 15px;
+  left: 17px;
+  z-index: 2;
 }
 
 .main__inner {
