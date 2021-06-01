@@ -1,0 +1,36 @@
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .main__inner {
+    max-width: 1200px;
+    /* background-color: tomato; */
+  }
+  
+  .main-video__wrapper {
+    max-width: 1200px;
+  }
+
+  .side-cameras__item.plug {
+    width: 350px;
+  }
+
+  .side-cameras__item.plug::before {
+    width: 350px;
+  }
+
+  .zoo-donate.pay-and-feed__link {
+    margin-top: 21%;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1439px) {
+  .side-cameras__controls {
+    margin-left: 0;
+  }
+
+  .main__inner {
+    max-width: 1100px;
+  }
+
+  .main-video__wrapper {
+    max-width: 1100px;
+  }
+}

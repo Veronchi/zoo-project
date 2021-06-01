@@ -155,6 +155,7 @@
 
 .main-video__wrapper {
   margin-bottom: 55px;
+  max-width: 1234px;
 }
 
 .side-cameras {
@@ -193,6 +194,7 @@
 
 .side-cameras__item.plug {
   position: relative;
+  width: 380px;
 }
 
 .side-cameras__item.plug::before {
