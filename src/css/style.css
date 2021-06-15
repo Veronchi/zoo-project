@@ -1329,7 +1329,7 @@ body {
   visibility: hidden;
 }
 
-.popup__title-contact {
+.popup__title-one {
   font-family: "Rubik";
   font-style: normal;
   font-weight: normal;
@@ -1343,4 +1343,12 @@ body {
 .input.textarea {
   width: 448px;
   height: 264px;
+}
+
+.popup.popup__feedback {
+  top: 3500px;
+  left: 600px;
+  z-index: 2;
+  padding-top: 46px;
+  visibility: hidden;
 }
