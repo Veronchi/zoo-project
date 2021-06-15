@@ -1127,13 +1127,16 @@ body {
 
 .popup {
   position: absolute;
-  visibility: hidden;
   top: 150px;
   left: 600px;
   padding-bottom: 46px;
   max-width: 568px;
   border-radius: 20px;
   background-color: #ffffff;
+}
+
+.popup__create-account {
+  visibility: hidden;
 }
 
 .popup__top {
@@ -1310,4 +1313,12 @@ body {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #C5E1E6;
+}
+
+.popup.popup__log-in {
+  visibility: hidden;
+}
+
+.popup__form-button.log-in {
+  margin-top: 20px;
 }
