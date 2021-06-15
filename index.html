@@ -590,6 +590,50 @@
       </div>
     </div>
 
+    <div id="popup" class="popup popup__donate">
+      <div class="popup__content">
+        <div class="popup__titles">
+          <h2 class="popup__title popup__title-one">Donate to volunteers</h2>
+          <p class="donate-text">Support your favourite animals. It is as simple as buying a cup of coffee.</p>
+        </div>
+        <form class="popup__form" action="#">
+          <label class="label" for="animal">Choose an animal</label>
+          <input class="input" id="animal" type="text">
+          <div class="payments">
+            <h3 class="payments__title">Payments</h3>
+            <div class="payments__periods">
+              <button class="payment__period-btn active" type="button">Monthly</button>
+              <button class="payment__period-btn" type="button">One-time</button>
+            </div>
+            <div class="payments__values">
+              <ul class="payments__values-list">
+                <li class="payments__values-item active"><button type="button">$3</button></li>
+                <li class="payments__values-item"><button type="button">$5</button></li>
+                <li class="payments__values-item"><button type="button">$10</button></li>
+                <li class="payments__values-item"><button type="button">$25</button></li>
+              </ul>
+            </div>
+          </div>
+          <label class="label" for="name">Your name</label>
+          <input class="input" id="name" type="text">
+          <label class="label" for="email">Your Email</label>
+          <input class="input" id="email" type="text">
+          <div class="payments-methods"></div>
+          <div class="payments__inputs">
+            <div class="card-number__wrapper">
+              <input class="payments__inputs-input card-number" type="text" placeholder="Card Number">
+            </div>
+            <input class="payments__inputs-input date" type="text" placeholder="MM / YY">
+            <input class="payments__inputs-input cvc" type="password" placeholder="CVC">
+          </div>
+          <button class="popup__form-button" type="submit">send</button>
+          <div class="protection">
+            Your payment is protected
+          </div>
+        </form>
+      </div>
+    </div>
+
     <script src="./dist/main.js"></script>
   </body>
 </html>
