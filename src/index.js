@@ -9,9 +9,37 @@ import './css/media-map.css';
 import './css/media-error.css';
 import './css/media-zoo.css';
 
-let [abc, baa, czz] = ["2", "3", "1"]
+"use strict";
 
-console.log(abc, baa, czz)
-console.log(111111);
+let mainBody = document.querySelector('body');
 
-console.log('gbif`k yf[eq]');
+let logInMain = document.getElementById('log-in__main');
+
+let newAccountMain = document.getElementById('popup__create-account-main');
+
+let visibility = false;
+
+function closePopup(status) {
+  if(status === true) {
+    newAccountMain.style.visibility = "visible";
+  } else if(status === false) {
+    newAccountMain.style.visibility = "hidden";
+  }
+};
+
+logInMain.addEventListener('click', function(){
+  visibility = true;
+
+  closePopup(visibility);
+});
+
+mainBody.addEventListener('click', function(event){
+  let target = event.target;
+
+  if(target.closest('.auth__login')) return;
+
+  if(!(target.closest('.popup'))) {
+    visibility = false;
+  }
+  closePopup(visibility);
+});
