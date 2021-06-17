@@ -41,5 +41,6 @@ mainBody.addEventListener('click', function(event){
   if(!(target.closest('.popup'))) {
     visibility = false;
   }
+  
   closePopup(visibility);
 });
