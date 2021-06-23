@@ -12,35 +12,52 @@ import './css/media-zoo.css';
 "use strict";
 
 let mainBody = document.querySelector('body');
-
-let logInMain = document.getElementById('log-in__main');
-
-let newAccountMain = document.getElementById('popup__create-account-main');
-
 let visibility = false;
+let whatPopupOpen = null;
+let header = document.querySelector('header');
+
+header.addEventListener('click', function (event) {
+  let target = event.target;
+  let popupBtn = target.closest('.popup__btn');
+
+  if (!popupBtn) return;
+
+  if (popupBtn.classList.contains('auth__login')) {
+    let permanentAccMain = document.getElementById('popup__log-in-main');
+    whatPopupOpen = permanentAccMain;
+    visibility = true;
+
+    openPopup(whatPopupOpen);
+
+  } else if (popupBtn.classList.contains('auth__signup')) {
+    let newAccountMain = document.getElementById('popup__create-account-main');
+    visibility = true;
+    whatPopupOpen = newAccountMain;
+
+    openPopup(whatPopupOpen);
+  }
+
+});
+
+function openPopup(item) {
+  item.style.visibility = "visible";
+}
 
 function closePopup(status) {
-  if(status === true) {
-    newAccountMain.style.visibility = "visible";
-  } else if(status === false) {
-    newAccountMain.style.visibility = "hidden";
+  if(status) {
+    whatPopupOpen.style.visibility = "hidden";
   }
-};
+}
 
-logInMain.addEventListener('click', function(){
-  visibility = true;
-
-  closePopup(visibility);
-});
-
-mainBody.addEventListener('click', function(event){
+mainBody.addEventListener('click', function (event) {
   let target = event.target;
 
-  if(target.closest('.auth__login')) return;
+  if (target.closest('.popup__btn')) return;
 
-  if(!(target.closest('.popup'))) {
-    visibility = false;
+  if (!(target.closest('.popup'))) {
+    visibility = true;
+
+    closePopup(visibility);
   }
-  
-  closePopup(visibility);
 });
+
