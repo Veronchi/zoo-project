@@ -27,6 +27,15 @@ body {
   padding: 0;
 }
 
+.blur-div {
+  visibility: hidden;
+  background:rgba(0,0,0,.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
 .header {
   height: 140px;
   background-color: #2a8086;
@@ -1138,6 +1147,7 @@ body {
   max-width: 568px;
   border-radius: 20px;
   background-color: #ffffff;
+  z-index: 3;
 }
 
 .popup__create-account {

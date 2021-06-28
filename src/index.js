@@ -15,6 +15,7 @@ let mainBody = document.querySelector('body');
 let visibility = false;
 let whatPopupOpen = null;
 let header = document.querySelector('header');
+let BlurDiv = document.querySelector('.blur-div');
 
 header.addEventListener('click', function (event) {
   let target = event.target;
@@ -25,13 +26,11 @@ header.addEventListener('click', function (event) {
   if (popupBtn.classList.contains('auth__login')) {
     let permanentAccMain = document.getElementById('popup__log-in-main');
     whatPopupOpen = permanentAccMain;
-    visibility = true;
 
     openPopup(whatPopupOpen);
 
   } else if (popupBtn.classList.contains('auth__signup')) {
     let newAccountMain = document.getElementById('popup__create-account-main');
-    visibility = true;
     whatPopupOpen = newAccountMain;
 
     openPopup(whatPopupOpen);
@@ -41,11 +40,15 @@ header.addEventListener('click', function (event) {
 
 function openPopup(item) {
   item.style.visibility = "visible";
+  visibility = true;
+  blurBackground();
 }
 
 function closePopup(status) {
   if(status) {
     whatPopupOpen.style.visibility = "hidden";
+    BlurDiv.style.visibility = 'hidden';
+    visibility = false;
   }
 }
 
@@ -55,9 +58,11 @@ mainBody.addEventListener('click', function (event) {
   if (target.closest('.popup__btn')) return;
 
   if (!(target.closest('.popup'))) {
-    visibility = true;
-
     closePopup(visibility);
   }
 });
 
+function blurBackground() {
+  BlurDiv.style.visibility = 'visible';
+  mainBody.style.position = 'fixed';
+};
