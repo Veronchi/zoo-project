@@ -16,6 +16,8 @@ let visibility = false;
 let whatPopupOpen = null;
 let header = document.querySelector('header');
 let BlurDiv = document.querySelector('.blur-div');
+let permanentAccMain = document.getElementById('popup__log-in-main');
+let newAccountMain = document.getElementById('popup__create-account-main');
 
 header.addEventListener('click', function (event) {
   let target = event.target;
@@ -24,18 +26,13 @@ header.addEventListener('click', function (event) {
   if (!popupBtn) return;
 
   if (popupBtn.classList.contains('auth__login')) {
-    let permanentAccMain = document.getElementById('popup__log-in-main');
     whatPopupOpen = permanentAccMain;
-
     openPopup(whatPopupOpen);
 
   } else if (popupBtn.classList.contains('auth__signup')) {
-    let newAccountMain = document.getElementById('popup__create-account-main');
     whatPopupOpen = newAccountMain;
-
     openPopup(whatPopupOpen);
   }
-
 });
 
 function openPopup(item) {
@@ -50,19 +47,35 @@ function closePopup(status) {
     BlurDiv.style.visibility = 'hidden';
     visibility = false;
   }
+};
+
+function blurBackground() {
+  BlurDiv.style.visibility = 'visible';
+  mainBody.style.position = 'fixed';
 }
 
 mainBody.addEventListener('click', function (event) {
   let target = event.target;
 
   if (target.closest('.popup__btn')) return;
-
+// debugger
   if (!(target.closest('.popup'))) {
     closePopup(visibility);
+  } else if(target.closest('.popup__titles')) {
+    togglePopup(target);
   }
 });
 
-function blurBackground() {
-  BlurDiv.style.visibility = 'visible';
-  mainBody.style.position = 'fixed';
-};
+function togglePopup(target) {
+  if(target.closest('.popup__title-left')) {
+    closePopup(visibility);
+    openPopup(newAccountMain);
+    whatPopupOpen = newAccountMain;
+    visibility = true;
+  } else if(target.closest('.popup__title-right')) {
+    closePopup(visibility);
+    openPopup(permanentAccMain);
+    whatPopupOpen = permanentAccMain;
+    visibility = true;
+  }
+}

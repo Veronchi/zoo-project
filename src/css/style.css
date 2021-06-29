@@ -1180,10 +1180,12 @@ body {
 
 .popup__title-left {
   width: 225px;
+  cursor: pointer;
 }
 
 .popup__title-right {
   width: 225px;
+  cursor: pointer;
 }
 
 .popup__title {
