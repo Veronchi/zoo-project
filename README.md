@@ -1,2 +1,2 @@
 # zoo-project
- https://veronchi.github.io/zoo-project/
+ [ZOO](https://veronchi.github.io/zoo-project/dist)
