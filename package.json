@@ -2,7 +2,6 @@
   "name": "zoo-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
     "dev": "webpack serve --mode development --open",
     "build": "webpack --mode production"
@@ -16,6 +15,7 @@
     "babel-loader": "^8.2.2",
     "babel-preset-stage-3": "^6.24.1",
     "css-loader": "^5.2.4",
+    "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.3.1",
     "path": "^0.12.7",
     "style-loader": "^2.0.0",

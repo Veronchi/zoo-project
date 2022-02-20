@@ -4,9 +4,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 let conf = {
     entry: './src/index.js',
     output: {
-        path: path.resolve(__dirname, './dist'),
+        path: path.resolve(__dirname, 'dist'),
         filename: 'main.js',
-        publicPath: '/dist/'
+        clean: true
     },
     devtool: 'inline-source-map',
     plugins: [
@@ -58,6 +58,10 @@ let conf = {
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
                 type: 'asset/resource',
+            },
+            {
+                test: /\.(html)$/,
+                use: ['html-loader']
             }
         ]
     },
